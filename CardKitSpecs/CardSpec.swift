@@ -30,4 +30,11 @@ describe("Card") {
   $0.it("is hashable") {
     try equal(card.hashValue, Card(suit: .Spade, value: .Ace).hashValue)
   }
+
+  $0.it("provides all cards") {
+    let deck = Card.all()
+
+    // Ensure that all cards are unique
+    try equal(Set(deck).count, 52)
+  }
 }

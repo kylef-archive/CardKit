@@ -3,6 +3,11 @@ public enum Suit {
   case Heart
   case Diamond
   case Club
+
+  /// Returns all possible suits
+  static var all: [Suit] {
+    return [.Spade, .Heart, .Diamond, .Club]
+  }
 }
 
 extension Suit : CustomStringConvertible {

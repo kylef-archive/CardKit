@@ -12,6 +12,14 @@ public enum Value {
   case Jack
   case Queen
   case King
+
+  /// Returns all possible values
+  static var all: [Value] {
+    return [
+      .Ace, .Two, .Three, .Four, .Five, .Six, .Seven, .Eight, .Nine, .Ten,
+      .Jack, .Queen, .King
+    ]
+  }
 }
 
 extension Value : CustomStringConvertible {

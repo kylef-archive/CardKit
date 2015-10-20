@@ -6,6 +6,15 @@ public struct Card : Equatable {
     self.suit = suit
     self.value = value
   }
+
+  /// Returns all possible cards
+  public static func all() -> [Card] {
+    return Suit.all.reduce([]) { accumulator, suit in
+      accumulator + Value.all.map {
+        Card(suit: suit, value: $0)
+      }
+    }
+  }
 }
 
 public func == (lhs: Card, rhs: Card) -> Bool {
