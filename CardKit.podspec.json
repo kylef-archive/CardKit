@@ -1,0 +1,11 @@
+{
+  "name": "CardKit",
+  "version": "0.1.0",
+  "source_files": "CardKit/*.swift",
+  "test_specification": {
+    "dependencies": {
+      "Spectre": [ "~> 0.2.0" ]
+    },
+    "source_files": "CardKitSpecs/*.swift"
+  }
+}
