@@ -23,6 +23,6 @@ public func == (lhs: Card, rhs: Card) -> Bool {
 
 extension Card : Hashable {
   public var hashValue: Int {
-    return suit.hashValue
+    return suit.hashValue ^ value.hashValue
   }
 }
