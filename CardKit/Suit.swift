@@ -1,4 +1,4 @@
-public enum Suit {
+public enum Suit : String {
   case Spade
   case Heart
   case Diamond
@@ -12,15 +12,6 @@ public enum Suit {
 
 extension Suit : CustomStringConvertible {
   public var description: String {
-    switch self {
-    case Spade:
-      return "Spade"
-    case Heart:
-      return "Heart"
-    case Diamond:
-      return "Diamond"
-    case Club:
-      return "Club"
-    }
+    return self.rawValue
   }
 }
