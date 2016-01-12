@@ -25,7 +25,7 @@ deck.shuffle()
 New shuffled array of cards
 
 ```swift
-let suffledDeck = deck.shuffled()
+let shuffledDeck = deck.shuffled()
 ```
 
 ## Installation
