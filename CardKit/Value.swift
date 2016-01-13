@@ -1,17 +1,17 @@
-public enum Value {
-  case Ace
-  case Two
-  case Three
-  case Four
-  case Five
-  case Six
-  case Seven
-  case Eight
-  case Nine
-  case Ten
-  case Jack
-  case Queen
-  case King
+public enum Value : String {
+  case Ace    = "A"
+  case Two    = "2"
+  case Three  = "3"
+  case Four   = "4"
+  case Five   = "5"
+  case Six    = "6"
+  case Seven  = "7"
+  case Eight  = "8"
+  case Nine   = "9"
+  case Ten    = "10"
+  case Jack   = "J"
+  case Queen  = "Q"
+  case King   = "K"
 
   /// Returns all possible values
   static var all: [Value] {
@@ -24,33 +24,6 @@ public enum Value {
 
 extension Value : CustomStringConvertible {
   public var description: String {
-    switch self {
-    case Ace:
-      return "A"
-    case Two:
-      return "2"
-    case Three:
-      return "3"
-    case Four:
-      return "4"
-    case Five:
-      return "5"
-    case Six:
-      return "6"
-    case Seven:
-      return "7"
-    case Eight:
-      return "8"
-    case Nine:
-      return "9"
-    case Ten:
-      return "10"
-    case Jack:
-      return "J"
-    case Queen:
-      return "Q"
-    case King:
-      return "K"
-    }
+    return self.rawValue
   }
 }
