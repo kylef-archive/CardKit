@@ -28,15 +28,6 @@ New shuffled array of cards
 let shuffledDeck = deck.shuffled()
 ```
 
-## Installation
-
-[CocoaPods](http://cocoapods.org/) or [Conche](https://github.com/kylef/Conche)
-are the recommended and supported installation methods.
-
-```ruby
-pod 'CardKit'
-```
-
 ## License
 
 CardKit is licensed under the BSD license. See [LICENSE](LICENSE) for more

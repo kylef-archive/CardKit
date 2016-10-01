@@ -1,25 +1,25 @@
 public enum Suit {
-  case Spade
-  case Heart
-  case Diamond
-  case Club
+  case spade
+  case heart
+  case diamond
+  case club
 
   /// Returns all possible suits
   static var all: [Suit] {
-    return [.Spade, .Heart, .Diamond, .Club]
+    return [.spade, .heart, .diamond, .club]
   }
 }
 
 extension Suit : CustomStringConvertible {
   public var description: String {
     switch self {
-    case Spade:
+    case .spade:
       return "Spade"
-    case Heart:
+    case .heart:
       return "Heart"
-    case Diamond:
+    case .diamond:
       return "Diamond"
-    case Club:
+    case .club:
       return "Club"
     }
   }

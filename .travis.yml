@@ -1,5 +1,4 @@
 language: objective-c
-osx_image: xcode7
-install: brew install --HEAD kylef/formulae/conche
+osx_image: xcode8
 script:
-- conche test
+- swift test
