@@ -12,11 +12,5 @@
     "watchos": "2.0",
     "tvos": "9.0"
   },
-  "source_files": "CardKit/*.swift",
-  "test_specification": {
-    "dependencies": {
-      "Spectre": [ "~> 0.2.0" ]
-    },
-    "source_files": "CardKitSpecs/*.swift"
-  }
+  "source_files": "Sources/*.swift"
 }
